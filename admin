@@ -1,1 +1,11 @@
 
+import streamlit as st
+import os
+
+def upload_pdf():
+    uploaded_file = st.file_uploader("Upload Policy PDF", type=["pdf"])
+    if uploaded_file:
+        with open(os.path.join("data", uploaded_file.name), "wb") as f:
+            f.write(uploaded_file.read())
+        st.success(f"Uploaded {uploaded_file.name}")
+
