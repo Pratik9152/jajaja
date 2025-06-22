@@ -1,0 +1,9 @@
+streamlit
+openai
+langchain
+pypdf
+faiss-cpu
+python-dotenv
+PyMuPDF
+sqlite-utils
+gTTS
